@@ -1,5 +1,8 @@
 .navbar
   background-color: #fff
+  &-bottom
+    background-color: $dark
+    padding: 31px 0
   &-top
     display: flex
     align-items: center
@@ -9,6 +12,19 @@
   &__search
     margin-right: auto
     margin-left: 108px
+  &-menu
+    list-style: none
+    padding: 0
+    margin: 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-size: 14px
+    line-height: 18px
+    &__link
+      text-decoration: none
+      color: $light
+      text-transform: uppercase
 .search
   display: flex
   position: relative
