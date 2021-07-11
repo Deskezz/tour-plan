@@ -62,15 +62,22 @@
         order: -1
         margin-left: 0
 @media (max-width: 576px)
-  .logo
-    width: 99px
-@media (min-width: 320px) and (max-width: 480px)
   .navbar
     height: 70px
     &-top
-      padding: 28px 20px
+      padding: 28px 0
       height: 100%
   .container
     height: 100%
-    width: 100%
-    margin: 0
+    width: 85%
+  .logo
+    width: 99px
+@media (min-width: 320px) and (max-width: 480px)
+  .container
+    height: 100%
+    width: 85%
+  .navbar
+    height: 70px
+    &-top
+      padding: 28px 0
+      height: 100%

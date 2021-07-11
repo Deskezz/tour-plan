@@ -537,6 +537,7 @@ template {
 }
 
 .hotel-name {
+  font-weight: bold;
   font-size: 24px;
   line-height: 30px;
 }
@@ -563,6 +564,7 @@ template {
 }
 
 .offer {
+  font-weight: 600;
   font-size: 10px;
   line-height: 13px;
   padding: 4px 9px;
@@ -690,23 +692,33 @@ template {
 }
 
 @media (max-width: 576px) {
+  .navbar {
+    height: 70px;
+  }
+  .navbar-top {
+    padding: 28px 0;
+    height: 100%;
+  }
+  .container {
+    height: 100%;
+    width: 85%;
+  }
   .logo {
     width: 99px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    height: 100%;
+    width: 85%;
+  }
   .navbar {
     height: 70px;
   }
   .navbar-top {
-    padding: 28px 20px;
+    padding: 28px 0;
     height: 100%;
-  }
-  .container {
-    height: 100%;
-    width: 100%;
-    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
