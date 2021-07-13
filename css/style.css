@@ -783,4 +783,12 @@ template {
     height: 100%;
   }
 }
+
+.hotel {
+  padding-top: 0;
+}
+
+.hotel-info {
+  margin-top: 5px;
+}
 /*# sourceMappingURL=style.css.map */
