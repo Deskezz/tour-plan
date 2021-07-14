@@ -7,7 +7,7 @@ const swiper = new Swiper('.swiper-container', {
     enabled: true,
     onlyInViewport: false,
   },
-
+  
   // Navigation arrows
   navigation: {
     nextEl: '.slider-button--next',

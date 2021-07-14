@@ -818,6 +818,9 @@ template {
   .container {
     max-width: 960px;
   }
+  .hotel-grid {
+    width: 100%;
+  }
 }
 
 @media (max-width: 992px) {
