@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <script
+      src="https://api-maps.yandex.ru/2.0-stable/?apikey=7d794b57-9ad5-429c-b20e-deec4b09da31&load=package.standard&lang=ru-RU"
+      type="text/javascript"
+    ></script>
     <title>Best Tour Plan - Hotel Booking</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=<7d794b57-9ad5-429c-b20e-deec4b09da31>"
+      type="text/javascript"
+    ></script>
   </head>
   <body>
     <header class="navbar">
@@ -226,17 +234,7 @@
               <button class="button booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div class="map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9400.7700615331!2d98.2952563607515!3d7.838733853159671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2s!4v1626219632159!5m2!1sru!2s"
-                class="map__link"
-                width="347"
-                height="213"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-              ></iframe>
-            </div>
+            <div id="map" style="width: 347px; height: 213px"></div>
             <!-- /.map -->
           </div>
         </div>
@@ -247,5 +245,6 @@
     <!-- /.hotel -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/mapbasics.js"></script>
   </body>
 </html>
