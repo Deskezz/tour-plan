@@ -3,10 +3,32 @@
     max-width: 960px
   .hotel
     &-grid
-      width: 100%
+      width: 960px
+  .slider
+    width: 600px
 @media (max-width: 992px)
   .container
     max-width: 700px
+  .hotel
+    &-grid
+      width: 700px
+      flex-wrap: wrap
+    &-right
+      width: 100%
+      flex-direction: row
+      justify-content: space-between
+  .booking
+    width: 340px
+    margin-bottom: 0
+  .map
+    width: 340px
+    height: 210px
+    &__link
+      width: 340px
+      height: 210px
+  .slider
+    width: 100%
+    margin-bottom: 30px
   .logo
     width: 132px
   .navbar
@@ -28,6 +50,19 @@
   .container
     max-width: 576px
     width: 95%
+  .hotel
+    &-info
+      padding-bottom: 38px
+    &-grid
+      width: 100%
+    &-right
+      flex-wrap: wrap
+      align-items: center
+      justify-content: center
+  .slider
+    margin-bottom: 20px
+  .booking
+    margin-bottom: 20px
   .navbar
     &__search, &-menu, &__user
       display: none
@@ -73,9 +108,25 @@
   .container
     height: 100%
     width: 85%
+  .hotel
+    &-info
+      padding-bottom: 38px
+    &-grid
+      width: 100%
+    &-right
+      flex-wrap: wrap
+      align-items: center
+      justify-content: center
+  .slider
+    margin-bottom: 20px
+  .booking
+    margin-bottom: 20px
+  .booking
+    margin-bottom: 20px
   .logo
     width: 99px
-@media (min-width: 320px) and (max-width: 480px)
+
+@media ( min-width: 320px ) and ( max-width: 480px )
   .container
     height: 100%
     width: 85%
@@ -84,7 +135,31 @@
     &-top
       padding: 28px 0
       height: 100%
-.hotel
-  padding-top: 0
+  .hotel
+    padding-top: 0
+  &-grid
+    width: 100%
   &-info
     margin-top: 5px
+    padding-bottom: 38px
+  .slider
+    min-height: 179px
+    height: 100%
+  .swiper-container
+    height: 100%
+  .map
+    width: 100%
+    min-width: 279px
+    max-width: 340px
+    height: 100%
+    min-height: 179px
+    max-height: 210px
+    &__link
+      width: 100%
+      height: 100%
+      min-height: 179px
+      max-height: 210px
+  .booking
+    width: 100%
+    min-width: 279px
+    max-width: 340px
