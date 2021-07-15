@@ -16,7 +16,6 @@ body {
 
 img {
   max-width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -829,6 +828,10 @@ template {
   .slider {
     width: 600px;
   }
+  .swipe-img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -887,9 +890,13 @@ template {
   .search__input {
     width: 340px;
   }
+  .swipe-img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 95%;
@@ -973,6 +980,10 @@ template {
             order: -1;
     margin-left: 0;
   }
+  .swipe-img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1015,6 +1026,10 @@ template {
   .logo {
     width: 99px;
   }
+  .swipe-img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -1040,10 +1055,13 @@ template {
     padding-bottom: 38px;
   }
   .slider {
-    min-height: 179px;
-    height: 100%;
+    height: 179px;
   }
   .swiper-container {
+    height: 100%;
+  }
+  .swipe-img {
+    width: 100%;
     height: 100%;
   }
   .map {
