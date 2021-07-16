@@ -1444,6 +1444,9 @@ template {
     text-align: center;
     text-transform: uppercase;
   }
+  .newsletter {
+    width: 100%;
+  }
   .newsletter-wrapper {
     max-width: 280px;
     height: 160px;
