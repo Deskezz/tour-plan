@@ -239,8 +239,35 @@
     min-width: 279px
     max-width: 340px
   .reviews
-    padding: 0 0 50px
+    padding: 40px 0 50px
     &-slider
       &__item
         margin: 45px auto 0px
         padding: 0 31px 0px
+      &__button
+        top: 30px
+        &--prev
+          left: 50%
+          transform: translate(-50%, 0)
+          margin-left: -75px
+        &--next
+          right: 50%
+          transform: translate(-50%, 0)
+          margin-right: -104px
+      &__text
+        width: 219px
+        font-style: normal
+        font-weight: normal
+        text-align: left
+        font-size: 12px
+        line-height: 160%
+    &__title
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      text-align: center
+      text-transform: uppercase
+  .newsletter
+    &-wrapper
+      max-width: 280px
+      height: 160px

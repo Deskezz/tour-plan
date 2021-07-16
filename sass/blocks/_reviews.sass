@@ -1,6 +1,7 @@
 .reviews
   padding: 40px 0 70px 0
   &__title
+    margin-top: 0
     font-weight: bold
     font-size: 36px
     line-height: 45px
@@ -39,7 +40,6 @@
     &__button
       position: absolute
       top: 50%
-      transform: translateY(-50%)
       width: 30px
       height: 30px
       background-repeat: no-repeat
@@ -51,10 +51,14 @@
       z-index: 99
       &--prev
         background-image: url(../img/arrow-prev.svg)
-        left: 0
+        position: absolute
+        left: 18px
+        transform: translateY(-103%)
       &--next
         background-image: url(../img/arrow-next.svg)
-        right: 0
+        position: absolute
+        right: 18px
+        transform: translateY(-103%)
     &__profile
       display: flex
       flex-direction: column
@@ -67,6 +71,7 @@
       border-radius: 50%
       margin-bottom: 9px
     &__username
+      margin-top: 0
       font-weight: bold
       font-size: 12px
       line-height: 15px
