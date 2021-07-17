@@ -1154,6 +1154,16 @@ template {
   .reviews-slider__item {
     max-width: 580px;
   }
+  .reviews-slider__button--prev {
+    left: 7px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .reviews-slider__button--next {
+    right: 7px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
 }
 
 @media (max-width: 767px) {
@@ -1421,13 +1431,13 @@ template {
     left: 50%;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
-    margin-left: -75px;
+    margin-left: -95px;
   }
   .reviews-slider__button--next {
     right: 50%;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
-    margin-right: -104px;
+    margin-right: -122px;
   }
   .reviews-slider__text {
     width: 219px;
