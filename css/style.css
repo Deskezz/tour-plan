@@ -1139,6 +1139,296 @@ template {
   color: #fff;
 }
 
+.other {
+  padding: 40px 0 70px 0;
+  height: 1250px;
+}
+
+.other-title {
+  margin-top: 0;
+}
+
+.other-package {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (350px)[3];
+      grid-template-columns: repeat(3, 350px);
+  -ms-grid-rows: 500px;
+      grid-template-rows: 500px;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px;
+}
+
+.package-card-0 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.package-card-1 {
+  position: relative;
+  width: 366px;
+  height: 500px;
+}
+
+.package-card-1__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.flash-sale {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  padding: 8px 12px;
+  background-color: #EC1F46;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.package-card-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 47px 21px 30px 44px;
+  width: 364px;
+  height: 500px;
+  background-color: #0A223D;
+  color: #fff;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.package-card-2__stars {
+  margin-bottom: 6px;
+}
+
+.package-card-2__title {
+  margin-top: 0;
+  margin-bottom: 27px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.package-card-2__text {
+  margin-top: 0;
+  margin-bottom: 34px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160.6%;
+}
+
+.package-card-2__geo {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 11px;
+}
+
+.package-card-2__geo--text {
+  margin-left: 15px;
+}
+
+.package-card-2__guests {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 11px;
+}
+
+.package-card-2__guests--text {
+  margin-left: 15px;
+}
+
+.package-card-2__rooms {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 37px;
+}
+
+.package-card-2__rooms--text {
+  margin-left: 15px;
+}
+
+.package-card-2__price {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  margin-bottom: 5px;
+}
+
+.package-card-2__pricetag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.package-card-2__pricetag--old {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.package-card-2__pricetag--button {
+  background-color: #EC1F46;
+  color: #fff;
+  padding: 10px 26px;
+  border: none;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.package-card-3__image {
+  position: relative;
+  width: 350px;
+  height: 250px;
+}
+
+.package-card-3__image--img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.package-card-3__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.package-card-3__base {
+  padding: 30px 21px 25px 32px;
+  background-color: #0A223D;
+  color: #fff;
+  width: 350px;
+  height: 250px;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.package-card-3__geo {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 11px;
+}
+
+.package-card-3__geo--text {
+  margin-left: 15px;
+}
+
+.package-card-3__guests {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 11px;
+}
+
+.package-card-3__guests--text {
+  margin-left: 15px;
+}
+
+.package-card-3__rooms {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 24px;
+}
+
+.package-card-3__rooms--text {
+  margin-left: 15px;
+}
+
+.package-card-3__price {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  margin-bottom: 5px;
+}
+
+.package-card-3__pricetag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.package-card-3__pricetag--old {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.package-card-3__pricetag--button {
+  background-color: #EC1F46;
+  color: #fff;
+  padding: 10px 26px;
+  border: none;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.flash-sale__two {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  padding: 4px 9px;
+  background-color: #EC1F46;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  border-radius: 0px 4px 4px 0px;
+}
+
 @media (min-width: 1201px) {
   .hotel-slider {
     margin-left: 0 !important;
@@ -1163,6 +1453,25 @@ template {
   .card {
     width: 230px;
     height: 230px;
+  }
+  .other-package {
+    -ms-grid-columns: (306px)[3];
+        grid-template-columns: repeat(3, 306px);
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 20px;
+  }
+  .package-card-1 {
+    width: 352px;
+  }
+  .package-card-3 {
+    width: 310px;
+  }
+  .package-card-3__image {
+    width: 100%;
+  }
+  .package-card-3__base {
+    width: 100%;
   }
 }
 
@@ -1282,6 +1591,22 @@ template {
   .card__title--four {
     width: 200px;
     height: 40px;
+  }
+  .other {
+    height: 1650px;
+  }
+  .other-package {
+    -ms-grid-columns: 350px;
+        grid-template-columns: 350px;
+    -webkit-column-gap: 5px;
+            column-gap: 5px;
+    row-gap: 5px;
+  }
+  .package-card-3 {
+    width: 345px;
+  }
+  .package-card-2 {
+    width: 350px;
   }
 }
 
@@ -1423,6 +1748,32 @@ template {
     width: 49%;
     height: 255px;
   }
+  .other-package {
+    -ms-grid-columns: 280px;
+        grid-template-columns: 280px;
+    -webkit-column-gap: 5px;
+            column-gap: 5px;
+    row-gap: 5px;
+  }
+  .package-card-0 {
+    height: 450px;
+  }
+  .package-card-1 {
+    width: 95%;
+  }
+  .package-card-2 {
+    padding: 20px 20px 30px 30px;
+    width: 95%;
+  }
+  .package-card-2__title {
+    margin-bottom: 20px;
+  }
+  .package-card-2__rooms {
+    margin-bottom: 25px;
+  }
+  .package-card-3 {
+    width: 99%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1493,6 +1844,70 @@ template {
   }
   .subscribe {
     width: 100%;
+  }
+  .other-package {
+    -ms-grid-columns: 240px;
+        grid-template-columns: 240px;
+    -webkit-column-gap: 5px;
+            column-gap: 5px;
+    row-gap: 5px;
+  }
+  .package-card-0 {
+    width: 100%;
+  }
+  .package-card-2 {
+    padding: 15px 12px 10px 12px;
+    width: 100%;
+  }
+  .package-card-2__image {
+    width: 100%;
+  }
+  .package-card-2__text {
+    line-height: 140%;
+  }
+  .package-card-2__pricetag--button {
+    font-size: 14px;
+    padding: 6px 15px;
+  }
+  .package-card-2__pricetag--old {
+    font-size: 20px;
+  }
+  .package-card-2__geo--text {
+    font-size: 10px;
+  }
+  .package-card-2__guests--text {
+    font-size: 10px;
+  }
+  .package-card-2__rooms--text {
+    font-size: 10px;
+  }
+  .package-card-2__price {
+    font-size: 10px;
+  }
+  .package-card-3 {
+    width: 100%;
+  }
+  .package-card-3__base {
+    padding-top: 10px;
+  }
+  .package-card-3__geo--text {
+    font-size: 10px;
+  }
+  .package-card-3__guests--text {
+    font-size: 10px;
+  }
+  .package-card-3__rooms--text {
+    font-size: 10px;
+  }
+  .package-card-3__price {
+    font-size: 10px;
+  }
+  .package-card-3__pricetag--button {
+    font-size: 14px;
+    padding: 6px 15px;
+  }
+  .package-card-3__pricetag--old {
+    font-size: 20px;
   }
 }
 
@@ -1605,6 +2020,40 @@ template {
   .card {
     width: 100%;
     height: 255px;
+  }
+  .other {
+    height: 2700px;
+  }
+  .other-package {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .package-card-0 {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .package-card-2__title {
+    font-size: 14px;
+  }
+  .package-card-2__text {
+    font-size: 9px;
+  }
+  .package-card-2__pricetag {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .package-card-2__pricetag--old {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
