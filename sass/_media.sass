@@ -19,17 +19,23 @@
     height: 230px
   .other
     &-package
-      grid-template-columns: repeat(3, 306px)
-      column-gap: 20px
-      row-gap: 20px
+      max-width: 960px
+      grid-template-columns: repeat(3, 300px)
+  .package-card-0
+    width: 630px
   .package-card-1
-    width: 352px
+    width: 315px
+  .package-card-2
+    width: 315px
+    &__title
+      margin-bottom: 20px
+    &__rooms
+      margin-bottom: 23px
   .package-card-3
-    width: 310px
-    &__image
-      width: 100%
-    &__base
-      width: 100%
+    width: 300px
+  .card-first
+    grid-row: 1
+    grid-column: 3
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -117,15 +123,33 @@
         width: 200px
         height: 40px
   .other
-    height: 1650px
     &-package
-      grid-template-columns: 350px
-      column-gap: 5px
-      row-gap: 5px
-  .package-card-3
-    width: 345px
+      max-width: 700px
+      grid-template-columns: repeat(2, 335px)
+  .package-card-0
+    width: 700px
+  .package-card-1
+    width: 350px
   .package-card-2
     width: 350px
+    &__title
+      margin-bottom: 27px
+    &__rooms
+      margin-bottom: 37px
+  .package-card-3
+    width: 335px
+  .card-first
+    grid-row: 2
+    grid-column: 1
+  .card-second
+    grid-row: 2
+    grid-column: 2
+  .card-three
+    grid-row: 3
+    grid-column: 1
+  .card-four
+    grid-row: 3
+    grid-column: 2
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -215,22 +239,39 @@
     height: 255px
   .other
     &-package
-      grid-template-columns: 280px
-      column-gap: 5px
-      row-gap: 5px
+      max-width: 576px
+      grid-template-columns: repeat(2, 259px)
   .package-card-0
-    height: 450px
+    width: 549px
   .package-card-1
-    width: 95%
+    width: 274px
   .package-card-2
-    padding: 20px 20px 30px 30px
-    width: 95%
+    padding: 47px 21px 30px 30px
+    width: 275px
     &__title
-      margin-bottom: 20px
+      margin-bottom: 27px
     &__rooms
-      margin-bottom: 25px
+      margin-bottom: 37px
+    &__text
+      font-size: 12px
+      line-height: 165.6%
   .package-card-3
-    width: 99%
+    width: 259px
+    &__pricetag
+      &--button
+        font-size: 10px
+  .card-first
+    grid-row: 2
+    grid-column: 1
+  .card-second
+    grid-row: 2
+    grid-column: 2
+  .card-three
+    grid-row: 3
+    grid-column: 1
+  .card-four
+    grid-row: 3
+    grid-column: 2
 @media (max-width: 576px)
   .navbar
     height: 70px
@@ -281,56 +322,57 @@
     width: 100%
   .other
     &-package
-      grid-template-columns: 240px
-      column-gap: 5px
-      row-gap: 5px
+      max-width: 576px
+      grid-template-columns: 1fr
+      grid-template-rows: repeat(5, 500px)
+    &-title
+      margin-bottom: 40px
   .package-card-0
+    display: flex
     width: 100%
+    flex-direction: column
+  .package-card-1
+    width: 100%
+    height: 250px
+    &__img
+      border-radius: 8px 8px 0 0
   .package-card-2
-    padding: 15px 12px 10px 12px
+    padding: 10px 21px 25px 32px
     width: 100%
-    &__image
-      width: 100%
+    height: 250px
+    border-radius: 0 0 8px 8px
+    &__title
+      margin-bottom: 23px
+    &__rooms
+      margin-bottom: 24px
     &__text
-      line-height: 140%
+      display: none
     &__pricetag
       &--button
-        font-size: 14px
-        padding: 6px 15px
-      &--old
-        font-size: 20px
-    &__geo
-      &--text
         font-size: 10px
-    &__guests
-      &--text
-        font-size: 10px
-    &__rooms
-      &--text
-        font-size: 10px
-    &__price
-      font-size: 10px
+        padding: 10px 26px
   .package-card-3
     width: 100%
-    &__base
-      padding-top: 10px
-    &__geo
-      &--text
-        font-size: 10px
-    &__guests
-      &--text
-        font-size: 10px
-    &__rooms
-      &--text
-        font-size: 10px
-    &__price
-      font-size: 10px
-    &__pricetag
-      &--button
-        font-size: 14px
-        padding: 6px 15px
-      &--old
-        font-size: 20px
+  .card-first
+    grid-row: 2
+    grid-column: 1
+  .card-second
+    grid-row: 3
+    grid-column: 1
+  .card-three
+    grid-row: 4
+    grid-column: 1
+  .card-four
+    grid-row: 5
+    grid-column: 1
+  .flash-sale
+    &__two
+      padding: 8px 12px
+      font-style: normal
+      font-weight: 600
+      font-size: 12px
+      line-height: 15px
+      border-radius: 0px 4px 4px 0px
 @media ( min-width: 320px ) and ( max-width: 480px )
   .container
     height: 100%
@@ -415,21 +457,3 @@
   .card
     width: 100%
     height: 255px
-  .other
-    height: 2700px
-    &-package
-      display: flex
-      flex-direction: column
-  .package-card-0
-    width: 100%
-    margin-bottom: 50px
-  .package-card-2
-    &__title
-      font-size: 14px
-    &__text
-      font-size: 9px
-    &__pricetag
-      flex-direction: column
-      align-items: stretch
-      &--old
-        margin-bottom: 20px

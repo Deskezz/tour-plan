@@ -1141,11 +1141,17 @@ template {
 
 .other {
   padding: 40px 0 70px 0;
-  height: 1250px;
 }
 
 .other-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 0;
+  margin-bottom: 65px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .other-package {
@@ -1153,25 +1159,14 @@ template {
   display: grid;
   -ms-grid-columns: (350px)[3];
       grid-template-columns: repeat(3, 350px);
-  -ms-grid-rows: 500px;
-      grid-template-rows: 500px;
   -webkit-column-gap: 30px;
           column-gap: 30px;
   row-gap: 30px;
 }
 
-.package-card-0 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 3;
-}
-
 .package-card-1 {
   position: relative;
-  width: 366px;
+  width: 365px;
   height: 500px;
 }
 
@@ -1179,6 +1174,12 @@ template {
   width: 100%;
   height: 100%;
   border-radius: 8px 0px 0px 8px;
+}
+
+.package-card-0 {
+  display: -ms-grid;
+  display: grid;
+  width: 730px;
 }
 
 .flash-sale {
@@ -1204,7 +1205,7 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 47px 21px 30px 44px;
-  width: 364px;
+  width: 365px;
   height: 500px;
   background-color: #0A223D;
   color: #fff;
@@ -1212,7 +1213,18 @@ template {
 }
 
 .package-card-2__stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 6px;
+  width: 48px;
+  height: 8px;
+}
+
+.package-card-2__stars--img {
+  margin-right: 4px;
+  max-width: 6px;
+  max-height: 6px;
 }
 
 .package-card-2__title {
@@ -1312,7 +1324,7 @@ template {
 
 .package-card-3__image {
   position: relative;
-  width: 350px;
+  width: 100%;
   height: 250px;
 }
 
@@ -1323,6 +1335,8 @@ template {
 }
 
 .package-card-3__title {
+  margin-top: 0;
+  margin-bottom: 23px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -1330,10 +1344,10 @@ template {
 }
 
 .package-card-3__base {
-  padding: 30px 21px 25px 32px;
+  padding: 23px 21px 25px 32px;
   background-color: #0A223D;
   color: #fff;
-  width: 350px;
+  width: 100%;
   height: 250px;
   border-radius: 0px 0px 8px 8px;
 }
@@ -1429,6 +1443,41 @@ template {
   border-radius: 0px 4px 4px 0px;
 }
 
+.package-card-2 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.card-first {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+.card-second {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.card-three {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.card-four {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
 @media (min-width: 1201px) {
   .hotel-slider {
     margin-left: 0 !important;
@@ -1455,23 +1504,33 @@ template {
     height: 230px;
   }
   .other-package {
-    -ms-grid-columns: (306px)[3];
-        grid-template-columns: repeat(3, 306px);
-    -webkit-column-gap: 20px;
-            column-gap: 20px;
-    row-gap: 20px;
+    max-width: 960px;
+    -ms-grid-columns: (300px)[3];
+        grid-template-columns: repeat(3, 300px);
+  }
+  .package-card-0 {
+    width: 630px;
   }
   .package-card-1 {
-    width: 352px;
+    width: 315px;
+  }
+  .package-card-2 {
+    width: 315px;
+  }
+  .package-card-2__title {
+    margin-bottom: 20px;
+  }
+  .package-card-2__rooms {
+    margin-bottom: 23px;
   }
   .package-card-3 {
-    width: 310px;
+    width: 300px;
   }
-  .package-card-3__image {
-    width: 100%;
-  }
-  .package-card-3__base {
-    width: 100%;
+  .card-first {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 3;
+    grid-column: 3;
   }
 }
 
@@ -1592,21 +1651,52 @@ template {
     width: 200px;
     height: 40px;
   }
-  .other {
-    height: 1650px;
-  }
   .other-package {
-    -ms-grid-columns: 350px;
-        grid-template-columns: 350px;
-    -webkit-column-gap: 5px;
-            column-gap: 5px;
-    row-gap: 5px;
+    max-width: 700px;
+    -ms-grid-columns: (335px)[2];
+        grid-template-columns: repeat(2, 335px);
   }
-  .package-card-3 {
-    width: 345px;
+  .package-card-0 {
+    width: 700px;
+  }
+  .package-card-1 {
+    width: 350px;
   }
   .package-card-2 {
     width: 350px;
+  }
+  .package-card-2__title {
+    margin-bottom: 27px;
+  }
+  .package-card-2__rooms {
+    margin-bottom: 37px;
+  }
+  .package-card-3 {
+    width: 335px;
+  }
+  .card-first {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .card-second {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  .card-three {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .card-four {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 2;
+    grid-column: 2;
   }
 }
 
@@ -1749,30 +1839,59 @@ template {
     height: 255px;
   }
   .other-package {
-    -ms-grid-columns: 280px;
-        grid-template-columns: 280px;
-    -webkit-column-gap: 5px;
-            column-gap: 5px;
-    row-gap: 5px;
+    max-width: 576px;
+    -ms-grid-columns: (259px)[2];
+        grid-template-columns: repeat(2, 259px);
   }
   .package-card-0 {
-    height: 450px;
+    width: 549px;
   }
   .package-card-1 {
-    width: 95%;
+    width: 274px;
   }
   .package-card-2 {
-    padding: 20px 20px 30px 30px;
-    width: 95%;
+    padding: 47px 21px 30px 30px;
+    width: 275px;
   }
   .package-card-2__title {
-    margin-bottom: 20px;
+    margin-bottom: 27px;
   }
   .package-card-2__rooms {
-    margin-bottom: 25px;
+    margin-bottom: 37px;
+  }
+  .package-card-2__text {
+    font-size: 12px;
+    line-height: 165.6%;
   }
   .package-card-3 {
-    width: 99%;
+    width: 259px;
+  }
+  .package-card-3__pricetag--button {
+    font-size: 10px;
+  }
+  .card-first {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .card-second {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  .card-three {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .card-four {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 2;
+    grid-column: 2;
   }
 }
 
@@ -1846,68 +1965,85 @@ template {
     width: 100%;
   }
   .other-package {
-    -ms-grid-columns: 240px;
-        grid-template-columns: 240px;
-    -webkit-column-gap: 5px;
-            column-gap: 5px;
-    row-gap: 5px;
+    max-width: 576px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (500px)[5];
+        grid-template-rows: repeat(5, 500px);
+  }
+  .other-title {
+    margin-bottom: 40px;
   }
   .package-card-0 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .package-card-1 {
+    width: 100%;
+    height: 250px;
+  }
+  .package-card-1__img {
+    border-radius: 8px 8px 0 0;
   }
   .package-card-2 {
-    padding: 15px 12px 10px 12px;
+    padding: 10px 21px 25px 32px;
     width: 100%;
+    height: 250px;
+    border-radius: 0 0 8px 8px;
   }
-  .package-card-2__image {
-    width: 100%;
+  .package-card-2__title {
+    margin-bottom: 23px;
+  }
+  .package-card-2__rooms {
+    margin-bottom: 24px;
   }
   .package-card-2__text {
-    line-height: 140%;
+    display: none;
   }
   .package-card-2__pricetag--button {
-    font-size: 14px;
-    padding: 6px 15px;
-  }
-  .package-card-2__pricetag--old {
-    font-size: 20px;
-  }
-  .package-card-2__geo--text {
     font-size: 10px;
-  }
-  .package-card-2__guests--text {
-    font-size: 10px;
-  }
-  .package-card-2__rooms--text {
-    font-size: 10px;
-  }
-  .package-card-2__price {
-    font-size: 10px;
+    padding: 10px 26px;
   }
   .package-card-3 {
     width: 100%;
   }
-  .package-card-3__base {
-    padding-top: 10px;
+  .card-first {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
   }
-  .package-card-3__geo--text {
-    font-size: 10px;
+  .card-second {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    grid-column: 1;
   }
-  .package-card-3__guests--text {
-    font-size: 10px;
+  .card-three {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 1;
+    grid-column: 1;
   }
-  .package-card-3__rooms--text {
-    font-size: 10px;
+  .card-four {
+    -ms-grid-row: 5;
+    grid-row: 5;
+    -ms-grid-column: 1;
+    grid-column: 1;
   }
-  .package-card-3__price {
-    font-size: 10px;
-  }
-  .package-card-3__pricetag--button {
-    font-size: 14px;
-    padding: 6px 15px;
-  }
-  .package-card-3__pricetag--old {
-    font-size: 20px;
+  .flash-sale__two {
+    padding: 8px 12px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    border-radius: 0px 4px 4px 0px;
   }
 }
 
@@ -2020,40 +2156,6 @@ template {
   .card {
     width: 100%;
     height: 255px;
-  }
-  .other {
-    height: 2700px;
-  }
-  .other-package {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .package-card-0 {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-  .package-card-2__title {
-    font-size: 14px;
-  }
-  .package-card-2__text {
-    font-size: 9px;
-  }
-  .package-card-2__pricetag {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-  }
-  .package-card-2__pricetag--old {
-    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
