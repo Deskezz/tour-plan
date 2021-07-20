@@ -1143,6 +1143,12 @@ template {
   padding: 40px 0 70px 0;
 }
 
+.other-wrapper {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
 .other-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1152,6 +1158,7 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-transform: uppercase;
 }
 
 .other-package {
@@ -1212,7 +1219,7 @@ template {
   border-radius: 0px 8px 8px 0px;
 }
 
-.package-card-2__stars {
+.package-card-2-stars {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1221,7 +1228,7 @@ template {
   height: 8px;
 }
 
-.package-card-2__stars--img {
+.package-card-2-stars__img {
   margin-right: 4px;
   max-width: 6px;
   max-height: 6px;
@@ -1245,7 +1252,7 @@ template {
   line-height: 160.6%;
 }
 
-.package-card-2__geo {
+.package-card-2-geo {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1253,11 +1260,11 @@ template {
   margin-bottom: 11px;
 }
 
-.package-card-2__geo--text {
+.package-card-2-geo__text {
   margin-left: 15px;
 }
 
-.package-card-2__guests {
+.package-card-2-guests {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1265,11 +1272,11 @@ template {
   margin-bottom: 11px;
 }
 
-.package-card-2__guests--text {
+.package-card-2-guests__text {
   margin-left: 15px;
 }
 
-.package-card-2__rooms {
+.package-card-2-rooms {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1277,7 +1284,7 @@ template {
   margin-bottom: 37px;
 }
 
-.package-card-2__rooms--text {
+.package-card-2-rooms__text {
   margin-left: 15px;
 }
 
@@ -1291,7 +1298,7 @@ template {
   margin-bottom: 5px;
 }
 
-.package-card-2__pricetag {
+.package-card-2-pricetag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1303,14 +1310,14 @@ template {
           justify-content: space-between;
 }
 
-.package-card-2__pricetag--old {
+.package-card-2-pricetag__old {
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
 }
 
-.package-card-2__pricetag--button {
+.package-card-2-pricetag__button {
   background-color: #EC1F46;
   color: #fff;
   padding: 10px 26px;
@@ -1322,13 +1329,13 @@ template {
   line-height: 19px;
 }
 
-.package-card-3__image {
+.package-card-3-image {
   position: relative;
   width: 100%;
   height: 250px;
 }
 
-.package-card-3__image--img {
+.package-card-3-image__img {
   width: 100%;
   height: 100%;
   border-radius: 8px 8px 0px 0px;
@@ -1352,7 +1359,7 @@ template {
   border-radius: 0px 0px 8px 8px;
 }
 
-.package-card-3__geo {
+.package-card-3-geo {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1360,11 +1367,11 @@ template {
   margin-bottom: 11px;
 }
 
-.package-card-3__geo--text {
+.package-card-3-geo__text {
   margin-left: 15px;
 }
 
-.package-card-3__guests {
+.package-card-3-guests {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1372,11 +1379,11 @@ template {
   margin-bottom: 11px;
 }
 
-.package-card-3__guests--text {
+.package-card-3-guests__text {
   margin-left: 15px;
 }
 
-.package-card-3__rooms {
+.package-card-3-rooms {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1384,7 +1391,7 @@ template {
   margin-bottom: 24px;
 }
 
-.package-card-3__rooms--text {
+.package-card-3-rooms__text {
   margin-left: 15px;
 }
 
@@ -1398,7 +1405,7 @@ template {
   margin-bottom: 5px;
 }
 
-.package-card-3__pricetag {
+.package-card-3-pricetag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1410,14 +1417,14 @@ template {
           justify-content: space-between;
 }
 
-.package-card-3__pricetag--old {
+.package-card-3-pricetag__old {
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
 }
 
-.package-card-3__pricetag--button {
+.package-card-3-pricetag__button {
   background-color: #EC1F46;
   color: #fff;
   padding: 10px 26px;
@@ -1429,7 +1436,7 @@ template {
   line-height: 19px;
 }
 
-.flash-sale__two {
+.flash-saled {
   position: absolute;
   top: 26px;
   left: 0;
@@ -1520,7 +1527,7 @@ template {
   .package-card-2__title {
     margin-bottom: 20px;
   }
-  .package-card-2__rooms {
+  .package-card-2-rooms {
     margin-bottom: 23px;
   }
   .package-card-3 {
@@ -1668,7 +1675,7 @@ template {
   .package-card-2__title {
     margin-bottom: 27px;
   }
-  .package-card-2__rooms {
+  .package-card-2-rooms {
     margin-bottom: 37px;
   }
   .package-card-3 {
@@ -1856,7 +1863,7 @@ template {
   .package-card-2__title {
     margin-bottom: 27px;
   }
-  .package-card-2__rooms {
+  .package-card-2-rooms {
     margin-bottom: 37px;
   }
   .package-card-2__text {
@@ -1866,7 +1873,7 @@ template {
   .package-card-3 {
     width: 259px;
   }
-  .package-card-3__pricetag--button {
+  .package-card-3-pricetag__button {
     font-size: 10px;
   }
   .card-first {
@@ -2000,13 +2007,13 @@ template {
   .package-card-2__title {
     margin-bottom: 23px;
   }
-  .package-card-2__rooms {
+  .package-card-2-rooms {
     margin-bottom: 24px;
   }
   .package-card-2__text {
     display: none;
   }
-  .package-card-2__pricetag--button {
+  .package-card-2-pricetag__button {
     font-size: 10px;
     padding: 10px 26px;
   }
@@ -2037,7 +2044,7 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .flash-sale__two {
+  .flash-saled {
     padding: 8px 12px;
     font-style: normal;
     font-weight: 600;
