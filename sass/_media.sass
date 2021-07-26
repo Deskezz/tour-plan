@@ -36,6 +36,13 @@
   .card-first
     grid-row: 1
     grid-column: 3
+  .footer
+    &__contact
+      &-details
+        width: 400px
+        height: 315px
+    &__item
+      &--mb-2
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -152,6 +159,53 @@
   .card-four
     grid-row: 3
     grid-column: 2
+  .footer
+    padding: 73px 0 33px 0
+    &-wrapper
+      grid-template-columns: repeat(3, minmax(min-content, 1fr))
+      column-gap: 0
+      row-gap: 38px
+    &__item
+      &--mb-2
+        font-size: 13px
+    &__logo
+      grid-row: 1 / 2
+      width: 104px
+      height: 120px
+      object-fit: cover
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 3
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      width: 162px
+    &__additional
+      width: 260px
+    &__legal
+      width: 202px
+    &__contact
+      &-details
+        grid-row: 3
+        margin-top: 23px
+        width: 493px
+        height: 245px
+      &-form
+        grid-column: 1 / span 2
+        grid-row: 4
+        justify-self: flex-start
+        margin-top: 22px
+        margin-bottom: 0
+        width: 539px
+    &__iconpack
+      grid-row: 5
+      grid-column: 3
+    &__inform
+      grid-row: 5
+      grid-column: 1 / span 2
+      margin-left: 0
+      justify-content: flex-start
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -277,6 +331,17 @@
   .card-four
     grid-row: 3
     grid-column: 2
+  .footer
+    &__title
+      font-size: 13px
+      &--inline
+        font-size: 16px
+    &__categories
+      width: 100%
+    &__additional
+      width: 100%
+    &__legal
+      width: 77%
 @media (max-width: 576px)
   .navbar
     height: 70px
@@ -378,6 +443,83 @@
     font-size: 12px
     line-height: 15px
     border-radius: 0px 4px 4px 0px
+  .footer
+    height: 1721px
+    padding: 69px 0 21px 0
+    &-wrapper
+      grid-template-columns: minmax(408px, 576px)
+      row-gap: 30px
+    &__logo
+      width: 104px
+      height: 120px
+    &__title
+      font-size: 18px
+      &--inline
+        margin-right: 0
+        margin-bottom: 22px
+      &--mb-3
+        margin-bottom: 15px
+    &__social
+      &-network
+        grid-column: 1
+        grid-row: 2
+        width: 245px
+        height: 67px
+        flex-wrap: wrap
+    &__categories
+      grid-column: 1
+      grid-row: 3
+      width: 100%
+    &__additional
+      grid-column: 1
+      grid-row: 4
+      width: 100%
+    &__legal
+      grid-column: 1
+      grid-row: 5
+      width: 100%
+      justify-self: start
+    &__contact
+      &-details
+        grid-column: 1
+        grid-row: 6
+        margin-top: 10px
+        width: 100%
+      &-form
+        grid-column: 1
+        grid-row: 7
+        margin-top: 30px
+        width: 100%
+    &__form
+      display: grid
+      grid-template-columns: minmax(408px, 576px)
+      width: 100%
+    &__message
+      width: 100%
+    &__inform
+      grid-column: 1
+      grid-row: 9
+      align-self: flex-start
+      justify-content: space-between
+      margin-bottom: 10px
+    &__iconpack
+      grid-column: 1
+      grid-row: 9
+      align-self: start
+      justify-self: start
+      margin-top: 25px
+    &__input
+      width: 100%
+    &__info
+      grid-row: 4
+      margin-bottom: 23px
+    &__button
+      grid-row: 8
+      width: 160px
+      height: 50px
+    &__link
+      &--text
+        font-size: 12px
 @media ( min-width: 320px ) and ( max-width: 480px )
   .container
     height: 100%
@@ -466,3 +608,85 @@
     &-title
       font-size: 23px
       margin-bottom: 20px
+  .footer
+    height: 1808px
+    padding: 69px 0 21px 0
+    &-wrapper
+      grid-template-columns: minmax(280px, 408px)
+      grid-template-rows: 1fr
+      height: 1700px
+      row-gap: 30px
+    &__logo
+      width: 104px
+      height: 120px
+    &__title
+      font-size: 18px
+      &--inline
+        margin-right: 0
+        margin-bottom: 22px
+      &--mb-3
+        margin-bottom: 15px
+    &__social
+      &-network
+        grid-column: 1
+        grid-row: 2
+        width: 245px
+        height: 67px
+        flex-wrap: wrap
+    &__categories
+      grid-column: 1
+      grid-row: 3
+      width: 100%
+    &__additional
+      grid-column: 1
+      grid-row: 4
+      width: 100%
+    &__legal
+      grid-column: 1
+      grid-row: 5
+      width: 100%
+      justify-self: start
+    &__contact
+      &-details
+        grid-column: 1
+        grid-row: 6
+        margin-top: 10px
+        width: 100%
+        height: 331px
+      &-form
+        grid-column: 1
+        grid-row: 7
+        margin-top: 30px
+        width: 100%
+        height: 386px
+    &__form
+      display: grid
+      grid-template-columns: minmax(280px, 408px)
+      width: 100%
+    &__message
+      width: 100%
+      margin-bottom: 11px
+    &__inform
+      grid-column: 1
+      grid-row: 9
+      align-self: flex-start
+      justify-content: space-between
+      margin-bottom: 10px
+    &__iconpack
+      grid-column: 1
+      grid-row: 9
+      align-self: start
+      justify-self: start
+      margin-top: 25px
+    &__input
+      width: 100%
+    &__info
+      grid-row: 4
+      margin-bottom: 11px
+    &__button
+      grid-row: 8
+      width: 160px
+      height: 50px
+    &__link
+      &--text
+        font-size: 12px
