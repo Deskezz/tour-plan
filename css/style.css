@@ -453,6 +453,7 @@ template {
   height: 100%;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .search__icon {
@@ -906,6 +907,10 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .reviews {
@@ -1328,6 +1333,7 @@ template {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
+  cursor: pointer;
 }
 
 .package-card-3-image {
@@ -1435,6 +1441,7 @@ template {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
+  cursor: pointer;
 }
 
 .flash-saled {
@@ -1696,6 +1703,7 @@ template {
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .footer__info {
