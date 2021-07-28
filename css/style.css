@@ -1930,7 +1930,7 @@ template {
     height: 315px;
   }
   .modal__dialog {
-    top: 16%;
+    top: 50%;
   }
 }
 
@@ -2289,6 +2289,7 @@ template {
     right: 0;
     bottom: 0;
     top: 75px;
+    overflow: auto;
   }
   .navbar-bottom--visible {
     display: block;
@@ -2298,8 +2299,6 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 400px;
-    overflow: scroll;
   }
   .navbar-menu__item {
     margin-bottom: 20px;
@@ -2758,7 +2757,6 @@ template {
   }
   .modal__dialog {
     width: 335px;
-    top: 17%;
     padding: 30px 35px;
   }
   .modal__button {
@@ -3016,7 +3014,6 @@ template {
   }
   .modal__dialog {
     width: 255px;
-    top: 17%;
     padding: 30px 20px;
   }
   .modal__button {
