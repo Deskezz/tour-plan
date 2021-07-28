@@ -2181,12 +2181,20 @@ template {
             justify-content: flex-start;
   }
   .modal__dialog {
-    padding: 33px 60px;
+    padding: 33px 40px;
+    height: 400px;
+  }
+  .modal__input {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  .modal__message {
+    height: 95px;
   }
   .modal__button {
     width: 120px;
-    height: 40px;
-    padding: 14px;
+    height: 35px;
+    padding: 11px;
   }
   .modal__info {
     font-size: 11px;
@@ -2466,7 +2474,15 @@ template {
   }
   .modal__dialog {
     width: 400px;
-    padding: 33px 50px;
+    height: 350px;
+    padding: 23px 40px;
+  }
+  .modal__input {
+    height: 35px;
+    margin-bottom: 7px;
+  }
+  .modal__message {
+    height: 90px;
   }
   .modal__button {
     width: 110px;
@@ -2757,12 +2773,23 @@ template {
   }
   .modal__dialog {
     width: 335px;
-    padding: 30px 35px;
+    height: 300px;
+    padding: 15px 35px;
+  }
+  .modal__title {
+    font-size: 16px;
+  }
+  .modal__input {
+    height: 33px;
+    margin-bottom: 6px;
+  }
+  .modal__message {
+    height: 70px;
   }
   .modal__button {
-    min-width: 130px;
-    min-height: 40px;
-    padding: 15px;
+    width: 110px;
+    height: 30px;
+    padding: 7px;
   }
   .modal__info {
     font-size: 10px;
@@ -3012,26 +3039,34 @@ template {
   .footer__link--text {
     font-size: 12px;
   }
+  .modal__close {
+    right: 10px;
+    top: 12px;
+  }
   .modal__dialog {
     width: 255px;
-    padding: 30px 20px;
+    height: 270px;
+    padding: 10px 30px;
+  }
+  .modal__title {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .modal__input {
+    height: 32px;
+    margin-bottom: 5px;
+  }
+  .modal__message {
+    height: 70px;
+    margin-bottom: 10px;
   }
   .modal__button {
-    min-width: 110px;
+    width: 100px;
     height: 30px;
-    padding: 15px;
+    padding: 4px;
   }
   .modal__info {
     font-size: 8px;
-  }
-  .modal__message {
-    height: 100px;
-  }
-  .modal__input {
-    height: 40px;
-  }
-  .modal__title {
-    font-size: 13px;
   }
 }
 /*# sourceMappingURL=style.css.map */
