@@ -59,4 +59,12 @@ function closeModal(event) {
   modalOverlay.removeClass('modal__overlay--visible')
   modalDialog.removeClass('modal__dialog--visible')
 }
+$(document).on('keyup',function(event) {
+  var modalOverlay = $('.modal__overlay')
+  var modalDialog = $('.modal__dialog')
+  if (event.keyCode == 27) {
+  modalOverlay.removeClass('modal__overlay--visible')
+  modalDialog.removeClass('modal__dialog--visible')
+}
+});
 });
