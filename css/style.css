@@ -45,8 +45,8 @@ img {
 }
 
 .button {
-  min-width: 160px;
-  min-height: 50px;
+  width: 160px;
+  height: 50px;
   padding: 18px;
   font-style: normal;
   font-weight: bold;
@@ -2180,6 +2180,17 @@ template {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  .modal__dialog {
+    padding: 33px 60px;
+  }
+  .modal__button {
+    width: 120px;
+    height: 40px;
+    padding: 14px;
+  }
+  .modal__info {
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2278,7 +2289,6 @@ template {
     right: 0;
     bottom: 0;
     top: 75px;
-    padding-top: 30px;
   }
   .navbar-bottom--visible {
     display: block;
@@ -2288,6 +2298,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 400px;
   }
   .navbar-menu__item {
     margin-bottom: 20px;
@@ -2454,7 +2465,16 @@ template {
     width: 77%;
   }
   .modal__dialog {
+    width: 400px;
     padding: 33px 50px;
+  }
+  .modal__button {
+    width: 110px;
+    height: 35px;
+    padding: 10px;
+  }
+  .modal__info {
+    font-size: 11px;
   }
 }
 
@@ -2736,8 +2756,9 @@ template {
     font-size: 12px;
   }
   .modal__dialog {
+    width: 335px;
     top: 17%;
-    padding: 30px 20px;
+    padding: 30px 35px;
   }
   .modal__button {
     min-width: 130px;

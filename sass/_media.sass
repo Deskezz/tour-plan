@@ -209,6 +209,15 @@
       grid-column: 1 / span 2
       margin-left: 0
       justify-content: flex-start
+  .modal
+    &__dialog
+      padding: 33px 60px
+    &__button
+      width: 120px
+      height: 40px
+      padding: 14px
+    &__info
+      font-size: 11px
 @media (max-width: 767px)
   body
     padding-top: 75px
@@ -276,11 +285,11 @@
       right: 0
       bottom: 0
       top: 75px
-      padding-top: 30px
       &--visible
         display: block
     &-menu
       flex-direction: column
+      height: 400px
       &__item
         margin-bottom: 20px
         &--mobile
@@ -394,7 +403,14 @@
       width: 77%
   .modal
     &__dialog
+      width: 400px
       padding: 33px 50px
+    &__button
+      width: 110px
+      height: 35px
+      padding: 10px
+    &__info
+      font-size: 11px
 @media (max-width: 576px)
   .navbar
     height: 70px
@@ -577,8 +593,9 @@
         font-size: 12px
   .modal
     &__dialog
+      width: 335px
       top: 17%
-      padding: 30px 20px
+      padding: 30px 35px
     &__button
       min-width: 130px
       min-height: 40px
